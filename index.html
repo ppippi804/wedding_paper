@@ -27,66 +27,7 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/remarkable/1.7.1/remarkable.js" type="text/javascript"></script>
 
     
-    <!-- <script type="text/javascript">
-        function sendMail() {
-
-            (function () {
-                emailjs.init("user_yjLL5xG0A3kkOCH5BGIDh");
-                emailjs.send("wedding-mail", "gift_send", {
-                    name: $("#sender-name").value,
-                    gift: $("#gift-name").text(),
-                    message: $("#sender-message").value
-                }).then(function (response) {
-                    console.log("SUCCESS. status=%d, text=%s", response.status, response.text);
-                }, function (err) {
-                    console.log("FAILED. error=", err);
-                });
-            })();
-        }
-
-        function findGetParameter(parameterName) {
-            var result = null,
-                tmp = [];
-            location.search
-                .substr(1)
-                .split("&")
-                .forEach(function (item) {
-                  tmp = item.split("=");
-                  if (tmp[0] === parameterName) result = decodeURIComponent(tmp[1]);
-                });
-            return result;
-        }
-
-        $(document).ready(function () {
-
-            function getText(){
-                var result = null;
-                $.ajax( { url: "https://raw.githubusercontent.com/AndersonChoi/wedding-card/master/README.md",
-                        type: 'get',
-                        dataType: 'html',
-                        async: false,
-                        success: function(data) { result = data; }
-                    }
-                );
-                FileReady = true;
-                return result;
-            }
-            var markdown_source = getText();
-            var comment_contents = markdown_source.split("축하의 말")[1];
-
-            var md = new Remarkable();
-            $("#comments").append(md.render(comment_contents));
-
-            
-            if(findGetParameter('gift')=='false'){
-                $('#gifts').hide();
-            }
-        });
-
-
-
-
-    </script> -->
+    
 </head>
 
 <body id="top">
@@ -106,8 +47,8 @@
                         <li class="gra_2">모바일 청첩장</li>
                         <li class="white_1">시작합니다.</li>
                     </ul> -->
-                    <p style="font-size: 3.5em;margin:50px 20px;font-weight: 600;padding-top: 80px;">안녕하세요</p>
-                    <p class="gra_1">한덕수 · 박정민</p>
+                    <p style="font-size:53px;margin:50px 20px;padding-top: 80px;font-family: 'Pretendard-Semibold2';letter-spacing: 0.2px;">안녕하세요</p>
+                    <p class="gra_1" style="font-family: 'Pretendard-Semibold2';">한덕수 · 박정민</p>
                     <p class="white_1">인사드립니다.</p><br><br><br><br>
                     <p class="white_1">지금부터</p>
                     <p class="gra_2">모바일 청첩장</p>
@@ -146,12 +87,12 @@
                 <p class="ban">Groom</p>
                 <div class="groom">
                     <div class="groom_1">
-                        <p class="right white_4">한석근 · 전옥심의 <b style="font-family: 'Pretendard-regular';">[장남]</b></p>
+                        <p class="right white_4" style="margin-top:45px;">한석근 · 전옥심의 <b style="font-family: 'Pretendard-regular';">[장남]</b></p>
                         <div class="groom_img">
                             <img src="images/with_1.jpeg" alt="">
                         </div>
                         <div>
-                            <p class="right white_4" style="margin-top: 258px;margin-right: 0;padding:0;">신랑<br>―</p>
+                            <p class="right white_4" style="margin-top: 235px;margin-right: 0;padding:0;">신랑<br>―</p>
                             <p class="right white_5" style="margin-right:0;">한덕수</p>
                         </div>
                     </div>
@@ -201,21 +142,22 @@
                 <div class="bride">
                     
                     <div class="bride_1">
-                        <p class="left white_4">박성찬 · 이경순의 <b style="font-family: 'Pretendard-regular';">[장녀]</b></p>
+                        <p class="left white_4" style="margin-top:45px;">박성찬 · 이경순의 <b style="font-family: 'Pretendard-regular';">[장녀]</b></p>
                         <div class="bride_img">
                             <img src="images/bride_2.jpeg" alt="">
                         </div>
                         <div>
-                            <p class="left white_4" style="margin-top: 258px;margin-left: 0;padding:0;">신부<br>―</p>
+                            <p class="left white_4" style="margin-top: 235px;margin-left: 0;padding:0;">신부<br>―</p>
                             <p class="left white_5" style="margin-left:0;">박정민</p>
                         </div>
 
                     </div>
                     <div class="with_txt">
-                        <p>덕수 : 버진로드 높이가 싫어...</p>
-                        <p>정민 : 왜?</p>
-                        <p>덕수 : 너무 관심 받잖아...</p>
-                        <p>정민 : 너가 신랑인데...?</p>
+                        <p>덕수 : 우리 사귀자..!</p>
+                        <p>정민 : ...5분만 이따가</p>
+                        <p>덕수 : 왜?</p>
+                        <p>정민 : 00시 지나고 1일 하고 싶어</p>
+                        <p>덕수 : ?</p>
                     </div>
 
                     <div class="groom_mbti">
@@ -237,7 +179,7 @@
                         <br>
                         <div class="with_year">
                             <ul>
-                                <li>1998년 10월 22일 출생</li>
+                                <li>1995년 8월 15일 출생</li>
                                 <li>어쩌구</li>
                                 <li>저쩌구</li>
                                 <li>어떤문구 어쩌구저쩌구</li>
@@ -256,7 +198,7 @@
 <!-- 갤러리 -->
             <div class="page_4">
                 <div class="back_w"></div>
-                <p class="ban">25.07.19. 17:00</p>
+                <p class="ban" style="letter-spacing: -2px;">25.07.19. 17:00</p>
 
                 <div class="info_1">
                     <p class="white_1">보테가마지오</p>
